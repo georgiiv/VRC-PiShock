@@ -1,0 +1,55 @@
+{
+	"PiShockConfig": {
+		"shockCooldown": 4000,
+
+		"PiShockUsername": "Your PiShock username goes here",
+		"PiShockApikey": "Generate key from https://pishock.com/#/account and put it here",
+		"PiShockName": "VRC-PiShock"
+	},
+
+	"PiShockOperationTypes": {
+		"shock": 0,
+		"vibrate": 1,
+		"beep": 2
+	},
+
+	"PiShockShareCodes": [
+		{
+			"collarName": "Give a name to your share code here",
+			"shareCode": "Generate a shock code and put it here"
+		}
+	],
+
+	"acceptedParameters": [
+		{
+			"paramName": "ProngCollar_Stretch",
+			"activationThreshold": 0.9,
+			"debounceThreshold": 0.3,
+
+			"operation": "shock",
+			"duration": {
+				"min": 1,
+				"max": 1
+			},
+			"intensity": {
+				"min": 15,
+				"max": 30
+			}
+		},
+		{
+			"paramName": "Example_Param123",
+			"activationThreshold": 0.9,
+			"debounceThreshold": 0.3,
+
+			"operation": "vibrate",
+			"duration": {
+				"min": 1,
+				"max": 1
+			},
+			"intensity": {
+				"min": 10,
+				"max": 20
+			}
+		}
+	]
+}
